@@ -42,18 +42,18 @@ EVAT_Chatbot/
 │   └── data/             # Training data (intents, stories, rules)  
 ├── backend/              # Core business logic  
 │   ├── real_time_apis.py # TomTom client used by actions  
+│   ├── llm/              # Qwen3 LLM API service (tools, providers, prompts)  
 │   └── utils/            # Utility functions  
 ├── frontend/             # Web interface  
-│   ├── index.html        # Main chat interface  
-│   ├── script.js         # Frontend logic  
-│   └── style.css         # Styling  
+│   ├── index.html        # Main landing page  
+│   ├── chat.html         # Main chat interface  
+│   ├── js/               # Core frontend logic (app.js, chatbot-api.js)  
+│   ├── chat/             # Chat UI modules (chips, history, messages)  
+│   ├── cards/            # Rich response cards (station, directions, traffic)  
+│   ├── ui/                # Shared UI components (input, typing indicator)  
+│   └── location/          # Location handling  
 ├── data/                 # Datasets  
 │   └── raw/              # CSV files (charging stations, coordinates)  
-├── ml/                   # Machine learning models  
-│   ├── classification.py # Station classification  
-│   ├── regression.py     # ETA prediction  
-│   └── README.md         # ML documentation  
-├── config/               # Configuration files  
 ├── README.md             # Project overview  
 ├── requirements.txt      # Dependencies  
 └── .gitignore            # Git ignore rules
